@@ -147,6 +147,9 @@ Code = Registieren
         b {
             color:blue;
         }
+        b1 {
+            color:black;
+        }
 
         .contact-form {
             padding:0px 50px;
@@ -162,6 +165,63 @@ Code = Registieren
             margin-top:25px;
             padding-top:25px;
         }
+
+        .member-area{
+            display:none;
+        }
+        .Chat-area{
+        }
+        .chat-popup{
+            padding-bottom: 30px;
+            display:none;
+
+        }
+        .open-button {
+
+        }
+        .form-container .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin:0 auto;
+            display:flex;
+            width: auto;
+            padding: 15px 60px;
+            font-size: 20px;
+            margin-bottom: 13px;
+            opacity: 0.8;
+        }
+        .form-container .cancel {
+            background-color: red;
+            margin:0 auto;
+            padding: 15px 60px;
+            font-size: 20px;
+            display:flex;
+        }
+        .alt-button {
+            margin: 0 335px;
+            display: flex;
+            margin:0 auto;
+            background-color: #FFF299;
+            color: black;
+            padding: 16px 75px;
+            border: none;
+            cursor: pointer;
+            font:400 13.3333px Arial;
+        }
+        .form-container .btn:hover, .open-button:hover {
+            opacity: 1;
+        }
+
+            textarea {
+                padding-bottom: 30px;
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                margin-bottom: 15px;}
+
+
     </style>
 </head>
 <body>
@@ -195,7 +255,7 @@ Code = Registieren
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" required>
 
-            <button type="submit">Login</button>
+            <button type="submit" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
@@ -205,7 +265,29 @@ Code = Registieren
             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
             <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
+
     </form>
+</div>
+
+<div id="id02" class="member-area">
+    <h1> Welcome to the Member Area</h1>
+    <div class="Chat-area">
+        <input type="text" placeholder="User">
+
+    </div>
+    <button class="open-button alt-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Chat</h1>
+
+
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
 </div>
 
 <script>
@@ -214,9 +296,16 @@ Code = Registieren
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
-        if (event.target == modal) {
+        if (event.target === modal) {
             modal.style.display = "none";
         }
+    }
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
     }
 </script>
 
