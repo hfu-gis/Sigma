@@ -10,7 +10,7 @@
     >
       <v-card class="elevation-12">
         <v-toolbar
-          color="primary"
+          color="#CDC0B0"
           dark
           flat
         >
@@ -52,7 +52,7 @@
               name="login"
               prepend-icon="mdi-account"
               type="text"
-              :value="user.familyName"
+              :value="users."
             />
 
             <v-text-field
@@ -66,7 +66,7 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer/>
-          <v-btn color="primary"
+          <v-btn color="#F5F5DC"
              @click="$emit('login', true); $router.push({name:'Overview'})">
             Login
           </v-btn>
@@ -83,7 +83,8 @@ export default {
   },
   data() {
     return {
-      user: {}
+      user: {},
+      users: {}
     }
   },
   methods: {
@@ -96,6 +97,8 @@ export default {
   },
   created() {
     this.user = require('../assets/data/profile')
+    this.users = require('../assets/data/Users.json')
+
   }
 }
 </script>

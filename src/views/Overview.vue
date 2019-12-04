@@ -45,7 +45,7 @@
     mounted() {
       for(let i=0; i<5; i++) {
         this.cards.push({
-          title: 'Dream Villas #' + i,
+          title: 'Dream  #' + i,
           src: 'https://picsum.photos/140?random=' + i
         })
       }
