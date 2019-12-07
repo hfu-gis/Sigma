@@ -29,7 +29,7 @@
             <v-icon>mdi-heart</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Markierte Sports</v-list-item-title>
+            <v-list-item-title>Markierte Spots</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 

@@ -52,7 +52,7 @@
               name="login"
               prepend-icon="mdi-account"
               type="text"
-              :value="users."
+              :value="Users = require('../assets/data/Users.json')"
             />
 
             <v-text-field
