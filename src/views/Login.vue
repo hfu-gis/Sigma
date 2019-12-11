@@ -10,11 +10,12 @@
     >
       <v-card class="elevation-12">
         <v-toolbar
-          color="#CDC0B0"
+          color="orange"
           dark
           flat
         >
-          <v-toolbar-title>Login</v-toolbar-title>
+          <v-toolbar-title class="headline mb-1"> </v-toolbar-title>
+          <v-toolbar-title color="black"> LOGIN </v-toolbar-title>
           <v-spacer/>
           <v-tooltip bottom>
             <template v-slot:activator="{ on }">
@@ -48,9 +49,10 @@
         <v-card-text>
           <v-form>
             <v-text-field
-              label="Login"
+              label="Name"
               name="login"
               prepend-icon="mdi-account"
+              icon color="orange"
               type="text"
               :value="Users = require('../assets/data/Users.json')"
             />
@@ -60,13 +62,14 @@
               label="Password"
               name="password"
               prepend-icon="mdi-textbox-password"
+              icon color="orange"
               type="password"
             />
           </v-form>
         </v-card-text>
         <v-card-actions>
           <v-spacer/>
-          <v-btn color="#F5F5DC"
+          <v-btn color="orange"
              @click="$emit('login', true); $router.push({name:'Overview'})">
             Login
           </v-btn>
