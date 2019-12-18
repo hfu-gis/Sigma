@@ -67,6 +67,10 @@
         <v-icon color="white">mdi-seat</v-icon>
       </v-btn>
 
+      <v-btn icon :to="{name:'Registration'}">
+        <v-icon color="white">mdi-account-plus</v-icon>
+      </v-btn>
+
       <v-btn v-if="!isLoggedIn" icon :to="{name:'Login'}">
         <v-icon color="white">mdi-login</v-icon>
       </v-btn>
