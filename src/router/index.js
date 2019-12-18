@@ -4,7 +4,7 @@ import Login from '../views/Login'
 import Order from '../views/Order'
 import Overview from '../views/Overview'
 import App from '../App'
-
+import Registration from '../views/Registration'
 Vue.use(VueRouter)
 
 export default new VueRouter({
@@ -29,5 +29,10 @@ export default new VueRouter({
             name: 'Order',
             component: Order
         },
+        {path: '/Registration',
+        name: 'Registration',
+        component: Registration
+        }
+
     ]
 })
