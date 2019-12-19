@@ -5,7 +5,7 @@ import Order from '../views/Order'
 import Overview from '../views/Overview'
 import App from '../App'
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 export default new VueRouter({
     routes: [

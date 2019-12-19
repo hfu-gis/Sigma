@@ -4,20 +4,21 @@
       v-model="drawer"
       app color="#F5F5DC"
       right
-    >
+>
+
       <v-list dense>
         <v-list-item link :to="{name:'Overview'}">
           <v-list-item-action>
-            <v-icon>mdi-account theme--light</v-icon>
+            <v-icon>mdi-home theme--light</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Persönliche Daten</v-list-item-title>
+            <v-list-item-title class>Map</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
         <v-list-item link :to="{name:'Order'}">
           <v-list-item-action>
-            <v-icon>mdi-seat</v-icon>
+            <v-icon class>mdi-chat</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>Forum</v-list-item-title>
@@ -41,7 +42,7 @@
             <v-list-item-title>Lieblings Orte</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-      </v-list>
+
 
 
         <v-list-item link>
@@ -56,10 +57,14 @@
 
     </v-navigation-drawer>
 
-    <v-app-bar app rigt color="orange"
-
+    <v-app-bar app right
+               color="orange" height="35"
        >
-      <v-toolbar-title>Faynd</v-toolbar-title>
+      <v-toolbar-title class="white--text">
+
+        Faynd
+
+      </v-toolbar-title>
       <v-spacer />
       <v-btn icon>
         <v-icon>mdi-magnify</v-icon>

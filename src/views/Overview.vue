@@ -1,37 +1,20 @@
 <template>
-    <v-row dense>
-      <v-col
-        v-for="card in cards"
-        :key="card.title"
-      >
-        <v-card elevation="4">
-          <v-img
-            :src="card.src"
-            class="white--text align-end"
-            gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-            height="140"
-          >
-            <v-card-title v-text="card.title"/>
-          </v-img>
-
-          <v-card-actions>
-            <v-spacer></v-spacer>
-
-            <v-btn icon>
-              <v-icon>mdi-heart</v-icon>
-            </v-btn>
-
-            <v-btn icon>
-              <v-icon>mdi-bookmark</v-icon>
-            </v-btn>
-
-            <v-btn icon>
-              <v-icon>mdi-share-variant</v-icon>
-            </v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-col>
-    </v-row>
+  <div id="app">
+  <gmap-map
+          v-bind:center="{lat:70, lng:70}"
+    v-bind:zoom="7"
+    style= "width:1200px; height: 550px"
+>
+    <gmap-marker
+            v-bind:key="index"
+            v-for="(m, index) in markers"
+            v-bind:position="m.position"
+            v-bind:clickable="true"
+            v-bind:draggable="true"
+            @click="center=m.position"
+    ></gmap-marker>
+    </gmap-map>
+  </div>
 </template>
 
 <script>
@@ -39,20 +22,12 @@
     name: 'Overview',
     data: () => {
       return {
-        cards: []
-      }
-    },
-    mounted() {
-      for(let i=0; i<5; i++) {
-        this.cards.push({
-          title: 'Dream  #' + i,
-          src: 'https://picsum.photos/140?random=' + i
-        })
+        center: {lat: 10.0, lng: 10.0},
       }
     }
   }
 </script>
 
-<style scoped>
+<style>
 
 </style>
