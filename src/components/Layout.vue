@@ -54,7 +54,7 @@
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
       <v-btn icon :to="{name:'Login'}">
-        <v-icon>mdi-login</v-icon>
+        <v-icon color="white">mdi-login</v-icon>
       </v-btn>
 
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
