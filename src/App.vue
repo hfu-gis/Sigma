@@ -17,7 +17,7 @@
 
         <v-list-item link :to="{name:'Order'}">
           <v-list-item-action>
-            <v-icon color="white">mdi-seat</v-icon>
+            <v-icon color="white">mdi-comment-text-outline</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>Forum</v-list-item-title>
@@ -35,10 +35,10 @@
 
         <v-list-item link>
           <v-list-item-action>
-            <v-icon color="white">mdi-star</v-icon>
+            <v-icon color="white">mdi-map</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Favorite Spots</v-list-item-title>
+            <v-list-item-title>Map</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
