@@ -2,7 +2,7 @@
     <main>
         <header><h1>Country selection</h1></header>
         <section>
-            <p>To verifiy if you are eligible for </p>
+            <p>To verify if you are eligible for </p>
         </section>
     </main>
 </template>

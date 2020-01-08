@@ -15,6 +15,7 @@
           </v-list-item-content>
         </v-list-item>
 
+
         <v-list-item link :to="{name:'Order'}">
           <v-list-item-action>
             <v-icon color="white">mdi-map</v-icon>
@@ -24,21 +25,23 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item link >
-          <v-list-item-action>
-            <v-icon color="white">mdi-heart</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Likes</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
 
-        <v-list-item link>
+        <v-list-item link >
           <v-list-item-action>
             <v-icon color="white">mdi-star</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Favorite Spots</v-list-item-title>
+            <v-list-item-title>My Favorite Spots</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+
+        <v-list-item link :to="{name:'Chat'}">
+          <v-list-item-action>
+              <v-icon color="white">mdi-chat</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Chats</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -52,13 +55,18 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-
     </v-navigation-drawer>
 
     <v-app-bar app rigt color="orange"
 
        >
-      <v-toolbar-title color="white">Faynd</v-toolbar-title>
+      <v-img
+              class="mx-2"
+              src="https://i.ibb.co/6JGSWGz/faynd-logo.jpg"
+              max-height="120"
+              max-width="155"
+              contain
+      ></v-img>
       <v-spacer />
       <v-btn icon>
         <v-icon color="white">mdi-magnify</v-icon>

@@ -70,7 +70,7 @@
                 country: '',
                 isAlreadyRegistered: false
             },
-            countries: ['test'],
+            countries: [''],
 
             nameRules: [
              //   value => (!!value && value.trim().length > 0) || 'Field is required',
