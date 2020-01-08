@@ -17,10 +17,10 @@
 
         <v-list-item link :to="{name:'Order'}">
           <v-list-item-action>
-            <v-icon color="white">mdi-seat</v-icon>
+            <v-icon color="white">mdi-map</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Forum</v-list-item-title>
+            <v-list-item-title>Map</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -58,7 +58,7 @@
     <v-app-bar app rigt color="orange"
 
        >
-      <v-toolbar-title>Faynd</v-toolbar-title>
+      <v-toolbar-title color="white">Faynd</v-toolbar-title>
       <v-spacer />
       <v-btn icon>
         <v-icon color="white">mdi-magnify</v-icon>

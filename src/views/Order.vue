@@ -4,7 +4,7 @@
           :center="{lat:48.0501442, lng:8.2014192}"
           :zoom="7"
           map-type-id="terrain"
-          style="width: 1200px; height: 700px"
+          style="width: 1250px; height: 600px"
   >
     <gmap-marker
             :key="index"
@@ -31,44 +31,22 @@ export default {
 
 // Variablen-Speicher
   data() {
-    return {
-      products: [
-      ],
-      name: {
-        type: String
-      },
-      price: {
-        type: Number
+      return {
+          center: {lat: 48.0501442, lng: 8.2014192},
+          markers: [
+              {
+                  position: {lat: 48.051314, lng: 8.207639}
+              },
+              {
+                  position: {lat: 48.047491, lng: 8.201187}
+              },
+              {
+                  position: {lat: 48.064557, lng: 8.193256}
+              }
+          ]
       }
-    }
-  },
-
-// reagieren auf prop-Veränderung
-  watch: {},
-
-// interne Methoden
-  methods: {
-    addToCatolog(id) {
-      let docRef = db.collection('products').doc(id)
-      docRef.set({
-        name: this.name,
-        price: this.price
-      })
-    }
-  },
-
-
-// Initialisierung
-  created() {
-    db.collection('products')
-      .then((productsFromDB) => {
-        this.products = productsFromDB
-      })
-      .catch((err) => {
-        console.log('Error getting documents', err)
-      })
   }
-}
+};
 </script>
 
 <style scoped>
