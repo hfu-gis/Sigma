@@ -2,22 +2,22 @@
   <v-app id="inspire">
     <v-navigation-drawer
       v-model="drawer"
-      app color="#F5F5DC"
+      app color="orange"
       right
     >
       <v-list dense>
         <v-list-item link :to="{name:'Overview'}">
           <v-list-item-action>
-            <v-icon>mdi-account theme--light</v-icon>
+            <v-icon color="white">mdi-account</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Persönliche Daten</v-list-item-title>
+            <v-list-item-title>My Profile</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
         <v-list-item link :to="{name:'Order'}">
           <v-list-item-action>
-            <v-icon>mdi-seat</v-icon>
+            <v-icon color="white">mdi-seat</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>Forum</v-list-item-title>
@@ -26,30 +26,29 @@
 
         <v-list-item link >
           <v-list-item-action>
-            <v-icon>mdi-heart</v-icon>
+            <v-icon color="white">mdi-heart</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Markierte Spots</v-list-item-title>
+            <v-list-item-title>Likes</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
         <v-list-item link>
           <v-list-item-action>
-            <v-icon>mdi-star</v-icon>
+            <v-icon color="white">mdi-star</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Lieblings Orte</v-list-item-title>
+            <v-list-item-title>Favorite Spots</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-      </v-list>
 
 
         <v-list-item link>
           <v-list-item-action>
-            <v-icon>mdi-settings</v-icon>
+            <v-icon color="white">mdi-settings</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Country</v-list-item-title>
+            <v-list-item-title>Settings</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -62,14 +61,18 @@
       <v-toolbar-title>Faynd</v-toolbar-title>
       <v-spacer />
       <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
+        <v-icon color="white">mdi-magnify</v-icon>
       </v-btn>
       <v-btn icon :to="{name:'Order'}">
-        <v-icon>mdi-seat</v-icon>
+        <v-icon color="white">mdi-seat</v-icon>
+      </v-btn>
+
+      <v-btn icon :to="{name:'Registration'}">
+        <v-icon color="white">mdi-account-plus</v-icon>
       </v-btn>
 
       <v-btn v-if="!isLoggedIn" icon :to="{name:'Login'}">
-        <v-icon>mdi-login</v-icon>
+        <v-icon color="white">mdi-login</v-icon>
       </v-btn>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"  />
     </v-app-bar>
