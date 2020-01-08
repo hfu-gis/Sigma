@@ -1,33 +1,21 @@
 <template>
-  <v-row>
-    <v-col class="col-md-4" v-for="(item,index) in products" :key="index">
-      <v-card elevation="10">
-        <v-img
-          :src="'http://picsum.photos/140?random='+index"
-          class="white--text align-end"
-          gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-          height="140"
-        >
-          <v-card-title v-text="item.title"/>
-        </v-img>
-
-        <v-card-actions>
-          <v-spacer/>
-          <v-btn icon>
-            <v-icon>mdi-heart</v-icon>
-          </v-btn>
-
-          <v-btn icon>
-            <v-icon>mdi-bookmark</v-icon>
-          </v-btn>
-
-          <v-btn icon>
-            <v-icon>mdi-share-variant</v-icon>
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+<div id="Map">
+  <gmap-map
+          :center="{lat:48.0501442, lng:8.2014192}"
+          :zoom="7"
+          map-type-id="terrain"
+          style="width: 1200px; height: 700px"
+  >
+    <gmap-marker
+            :key="index"
+            v-for="(m, index) in markers"
+            :position="m.position"
+            :clickable="true"
+            :draggable="true"
+            @click="center=m.position"
+    />
+  </gmap-map>
+  </div>
 </template>
 
 <script>
@@ -45,11 +33,6 @@ export default {
   data() {
     return {
       products: [
-        {title:'Tropfen'},
-        {title:'Verdampfer'},
-        {title:'Cookies'},
-        {title:'Tee'},
-        {title:'Pulver'}
       ],
       name: {
         type: String
