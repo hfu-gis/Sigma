@@ -64,7 +64,7 @@
         <v-icon color="white">mdi-magnify</v-icon>
       </v-btn>
       <v-btn icon :to="{name:'Order'}">
-        <v-icon color="white">mdi-seat</v-icon>
+        <v-icon color="white">mdi-map</v-icon>
       </v-btn>
 
       <v-btn icon :to="{name:'Registration'}">
