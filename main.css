@@ -5,24 +5,20 @@ html {
   line-height: 1.4;
 }
 header {
-        width: auto;
-        height: 100px;
-        background-color: #38423C ;
-
+  width: auto;
+  height: 100px;
+  background-color: #38423C;
 }
 
 body {
-        width: auto;
-        height: auto;
-        background-color: white;
-
-
+  width: auto;
+  height: auto;
+  background-color: white;
 }
 footer {
-         width: auto;
-         height: 100px;
-         background-color: #38423C;
-
+  width: auto;
+  height: 100px;
+  background-color: #38423C;
 }
 /*LoginForm:*/
 /* Bordered form */
