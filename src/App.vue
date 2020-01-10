@@ -33,7 +33,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item link>
+        <v-list-item link :to="{name:'Rating'}">
           <v-list-item-action>
             <v-icon color="white">mdi-star</v-icon>
           </v-list-item-action>

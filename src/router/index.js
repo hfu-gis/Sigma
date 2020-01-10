@@ -5,6 +5,7 @@ import Order from '../views/Order'
 import Overview from '../views/Overview'
 import App from '../App'
 import Registration from '../views/Registration'
+import Rating from "../views/Rating";
 Vue.use(VueRouter)
 
 export default new VueRouter({
@@ -28,6 +29,12 @@ export default new VueRouter({
             path: '/order',
             name: 'Order',
             component: Order
+        },
+
+        {
+            path: '/Rating',
+            name: 'Rating',
+            component: Rating
         },
         {path: '/Registration',
         name: 'Registration',
