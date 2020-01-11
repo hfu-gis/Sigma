@@ -5,6 +5,7 @@ import Order from '../views/Order'
 import Overview from '../views/Overview'
 import App from '../App'
 import Registration from '../views/Registration'
+import Rating from "../views/Rating";
 import Chat from '../views/Chat'
 Vue.use(VueRouter)
 
@@ -30,6 +31,12 @@ export default new VueRouter({
             name: 'Order',
             component: Order
         },
+
+        {
+            path: '/Rating',
+            name: 'Rating',
+            component: Rating
+        },
         {path: '/Registration',
         name: 'Registration',
         component: Registration
@@ -38,6 +45,5 @@ export default new VueRouter({
             name: 'Chat',
             component: Chat
         }
-
     ]
 })

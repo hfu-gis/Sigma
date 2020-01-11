@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@mdi/font": "^3.6.95",
-    "core-js": "^3.3.2",
+    "core-js": "^3.6.2",
     "firebase": "^7.6.1",
     "roboto-fontface": "*",
     "vue": "^2.6.10",

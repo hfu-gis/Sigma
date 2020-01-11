@@ -11,8 +11,7 @@
                   class="mx-auto d-block"
                   size="200"
           >
-            <img
-                    src="https://scontent-frx5-1.cdninstagram.com/v/t51.2885-19/s320x320/70507602_673391699815750_6621940766920933376_n.jpg?_nc_ht=scontent-frx5-1.cdninstagram.com&oh=5c744dda6c8a9601f3ba93117ab05d61&oe=5E77CB58"
+            <img src="https://scontent-frx5-1.cdninstagram.com/v/t51.2885-19/s320x320/70507602_673391699815750_6621940766920933376_n.jpg?_nc_ht=scontent-frx5-1.cdninstagram.com&oh=5c744dda6c8a9601f3ba93117ab05d61&oe=5E77CB58"
             >
           </v-avatar>
           <v-card-text class="text-md-centero">
@@ -22,7 +21,8 @@
             <v-btn
                     color="success"
                     round
-                    class="font-weight-light"
+                    class="font-weight-light">
+            </v-btn>
           </v-card-text>
         </material-card>
       </v-flex>

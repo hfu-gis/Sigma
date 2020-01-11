@@ -10,9 +10,6 @@
             :key="index"
             v-for="(m, index) in markers"
             :position="m.position"
-            :clickable="true"
-            :draggable="true"
-            @click="center=m.position"
     />
   </gmap-map>
   </div>
@@ -49,6 +46,3 @@ export default {
 };
 </script>
 
-<style scoped>
-  /* CSS für diese Seite hier einfügen */
-</style>
