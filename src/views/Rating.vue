@@ -112,6 +112,7 @@
                     size="18"
             ></v-rating>
         </v-card-actions>
+
     </v-card>
 
 
