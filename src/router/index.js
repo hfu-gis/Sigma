@@ -6,7 +6,6 @@ import Overview from '../views/Overview'
 import App from '../App'
 import Registration from '../views/Registration'
 import Rating from "../views/Rating";
-import Chat from '../views/Chat'
 Vue.use(VueRouter)
 
 export default new VueRouter({
@@ -41,9 +40,5 @@ export default new VueRouter({
         name: 'Registration',
         component: Registration
         },
-        {path: '/Chat',
-            name: 'Chat',
-            component: Chat
-        }
     ]
 })
