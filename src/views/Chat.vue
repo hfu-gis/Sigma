@@ -1,4 +1,5 @@
 <template>
+
     <div>
         <Chat
                 :participants="participants"
@@ -13,6 +14,8 @@
                 :hideCloseButton="hideCloseButton"
                 :closeButtonIconSize="closeButtonIconSize"
                 :submitIconSize="submitIconSize"/>
+
+
     </div>
 </template>
 
@@ -123,6 +126,7 @@
                 }
             }
         }
+
 </script>
 
 <style scoped>

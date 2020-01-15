@@ -42,7 +42,7 @@
               </v-list-item-content>
           </v-list-item>
 
-          <v-list-item link>
+          <v-list-item link :to="{name:'Settings'}">
           <v-list-item-action>
             <v-icon color="white">mdi-settings</v-icon>
           </v-list-item-action>
@@ -50,6 +50,15 @@
             <v-list-item-title>Settings</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
+      <v-list-item link :to="{name:'AboutUs'}">
+        <v-list-item-action>
+          <v-icon color="white">mdi-emoticon-cool</v-icon>
+        </v-list-item-action>
+        <v-list-item-content>
+          <v-list-item-title>About Us</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
       </v-list>
 
     </v-navigation-drawer>
@@ -93,6 +102,7 @@
 
       <span>&copy; Faynd 2019</span>
     </v-footer>
+
   </v-app>
 </template>
 
